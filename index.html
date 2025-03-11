@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Florida Airpark Specials | Premier Airpark Real Estate</title>
+    <meta name="description" content="Discover Florida's finest airpark real estate properties. Live where you fly with over 30 airparks to choose from across the Sunshine State.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- [SECTION: page_header] -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://via.placeholder.com/200x60" alt="Florida Airpark Specials Logo">
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#featured-properties">Featured Properties</a></li>
+                    <li><a href="#airparks">Airparks</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="cta-button"><a href="#contact" class="btn btn-primary">Schedule Viewing</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <!-- [END SECTION: page_header] -->
+
+    <!-- [SECTION: hero_section] -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Runway to Florida's Premier Airpark Living</h1>
+            <p>Discover exclusive aviation communities with direct runway access across the Sunshine State</p>
+            <div class="hero-cta">
+                <a href="#featured-properties" class="btn btn-primary">View Properties</a>
+                <a href="#airparks" class="btn btn-secondary">Explore Airparks</a>
+            </div>
+        </div>
+    </section>
+    <!-- [END SECTION: hero_section] -->
+
+    <!-- [SECTION: search_bar] -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <form id="property-search" class="search-form">
+                    <div class="search-group">
+                        <label for="location">Location</label>
+                        <select id="location" name="location">
+                            <option value="">All Regions</option>
+                            <option value="central">Central Florida</option>
+                            <option value="north">North Florida</option>
+                            <option value="south">South Florida</option>
+                            <option value="panhandle">Florida Panhandle</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <label for="price">Price Range</label>
+                        <select id="price" name="price">
+                            <option value="">Any Price</option>
+                            <option value="300000-500000">$300k - $500k</option>
+                            <option value="500000-750000">$500k - $750k</option>
+                            <option value="750000-1000000">$750k - $1M</option>
+                            <option value="1000000+">$1M+</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <label for="runway">Runway Length</label>
+                        <select id="runway" name="runway">
+                            <option value="">Any Length</option>
+                            <option value="2000-3000">2,000' - 3,000'</option>
+                            <option value="3000-4000">3,000' - 4,000'</option>
+                            <option value="4000+">4,000'+</option>
+                        </select>
+                    </div>
+                    <div class="search-group">
+                        <label for="hangar">Hangar</label>
+                        <select id="hangar" name="hangar">
+                            <option value="">Any</option>
+                            <option value="attached">Attached</option>
+                            <option value="detached">Detached</option>
+                            <option value="both">Both</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary search-button">Search Properties</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- [END SECTION: search_bar] -->
+
+    <!-- [SECTION: featured_properties] -->
+    <section id="featured-properties" class="featured-properties section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Airpark Properties</h2>
+                <p>Exceptional homes with direct runway access</p>
+            </div>
+            <div class="property-grid" id="property-listings">
+                <!-- Property cards will be inserted dynamically via JavaScript -->
+            </div>
+            <div class="section-footer">
+                <a href="#" class="btn btn-secondary">View All Properties</a>
+            </div>
+        </div>
+    </section>
+    <!-- [END SECTION: featured_properties] -->
+
+    <!-- [SECTION: airparks] -->
+    <section id="airparks" class="airparks-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Florida Airparks</h2>
+                <p>Over 30 aviation communities across the state</p>
+            </div>
+            <div class="airparks-map">
+                <img src="https://via.placeholder.com/1200x600" alt="Map of Florida Airparks" class="florida-map">
+                <div class="map-overlay">
+                    <p>Interactive map coming soon!</p>
+                    <button id="view-airparks-list" class="btn btn-secondary">View Airparks List</button>
+                </div>
+            </div>
+            <div class="airparks-grid" id="airparks-list">
+                <!-- Airpark cards will be inserted dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+    <!-- [END SECTION: airparks] -->
+
+    <!-- [SECTION: testimonials] -->
+    <section class="testimonials-section section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Hear from happy airpark residents</p>
+            </div>
+            <div class="testimonials-slider" id="testimonials-container">
+                <!-- Testimonials will be inserted dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+    <!-- [END SECTION: testimonials] -->
+
+    <!-- [SECTION: about] -->
+    <section id="about" class="about-section section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Florida's Airpark Specialists</h2>
+                    <p>With over 15 years of experience in airpark real estate, Florida Airpark Specials is the premier resource for pilots and aviation enthusiasts looking to live with their aircraft.</p>
+                    <p>Our team combines expertise in both aviation and real estate to help you find the perfect property that meets your flying lifestyle needs.</p>
+                    <ul class="about-features">
+                        <li>Specialized in over 30 Florida airparks</li>
+                        <li>Pilot-agents who understand aviation requirements</li>
+                        <li>Comprehensive knowledge of airpark covenants and restrictions</li>
+                        <li>Connections with aviation community networks</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Connect With Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/500x600" alt="Team of Florida Airpark Specialists">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [END SECTION: about] -->
+
+    <!-- [SECTION: contact] -->
+    <section id="contact" class="contact-section section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Ready for Takeoff?</h2>
+                    <p>Contact our airpark specialists to start your journey to aviation living.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="icon">📱</span>
+                            <span>(800) AIR-PARK</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">✉️</span>
+                            <span>info@floridaairparkspecials.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>123 Aviation Way, Orlando, FL 32827</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">I'm interested in:</label>
+                            <select id="interest" name="interest">
+                                <option value="buying">Buying an airpark property</option>
+                                <option value="selling">Selling my airpark property</option>
+                                <option value="info">Learning more about airpark living</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [END SECTION: contact] -->
+
+    <!-- [SECTION: page_footer] -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://via.placeholder.com/180x50" alt="Florida Airpark Specials Logo">
+                    <p>Your Runway to Exceptional Living</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#featured-properties">Featured Properties</a></li>
+                            <li><a href="#airparks">Airparks</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Regions</h4>
+                        <ul>
+                            <li><a href="#">Central Florida</a></li>
+                            <li><a href="#">North Florida</a></li>
+                            <li><a href="#">South Florida</a></li>
+                            <li><a href="#">Florida Panhandle</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Airpark Guide</a></li>
+                            <li><a href="#">Buying Process</a></li>
+                            <li><a href="#">Financing Options</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Florida Airpark Specials. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="YouTube">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- [END SECTION: page_footer] -->
+
+    <script src="script.js"></script>
+</body>
+</html>
